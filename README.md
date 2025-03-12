@@ -1,13 +1,16 @@
 # Parcial: EJS
 
 ## Descripción
+
 Aplicación web que gestiona personajes de Star Wars a partir de un archivo JSON, permitiendo filtrarlos por planeta y especie.
 
 ## Datos del Autor
+
 - **Nombre:** Edwar Esteban Fonseca Jimenez
 - **Universidad:** Universidad Pedagógica y Tecnológica de Colombia
 
 ## Tecnologías Utilizadas
+
 - **Node.js** (Entorno de ejecución)
 - **Express** (Framework para manejar rutas y servidores)
 - **EJS** (Motor de plantillas para renderizar HTML dinámico)
@@ -30,9 +33,14 @@ Para ejecutar la aplicación correctamente, asegúrate de tener instaladas las s
 Para instalar todas las dependencias necesarias, usa el siguiente comando:
 
 ```bash
-npm npm init -y
+npm init -y
 npm install express ejs body-parser
 npm install --save-dev nodemon
 npx nodemon server.js
 node app.js
+```
 
+## Repositorio
+
+Puedes encontrar el código fuente de este proyecto en el siguiente enlace:
+[Repositorio en GitHub](https://github.com/edwarfonseca/parcial-ejs.git)
