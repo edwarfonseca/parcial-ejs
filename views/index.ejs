@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Personajes de Star Wars</h1>
+    <label for="planetFilter">Filtrar por Planeta:</label>
+    <select id="planetFilter">
+        <option value="">Todos</option>
+        <% characters.forEach(character => { %>
+            <option value="<%= character.homeworld %>"><%= character.homeworld %></option>
+        <% }); %>
+    </select>
+
+    <label for="speciesFilter">Filtrar por Especie:</label>
+    <select id="speciesFilter">
+        <option value="">Todos</option>
+        <% characters.forEach(character => { %>
+            <option value="<%= character.species %>"><%= character.species %></option>
+        <% }); %>
+    </select>
+
+    <ul id="characterList">
+        <% characters.forEach(character => { %>
+            <li><strong><%= character.name %></strong> - <%= character.species %> - <%= character.homeworld %></li>
+        <% }); %>
+    </ul>
+
+    <script src="/script.js"></script>
+</body>
+</html>
